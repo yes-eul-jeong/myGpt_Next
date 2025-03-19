@@ -1,0 +1,85 @@
+body{
+  background-color: #121212; /* 다크 배경 */
+color: #e0e0e0; /* 밝은 텍스트 */
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+height: 100dvh;
+display: flex;
+flex-direction: column;
+}
+
+main {
+  height: 100dvh;
+display: flex;
+flex-direction: column;
+flex-grow: 1;
+background-color: #1f1f1f; /* 다크 헤더 */
+color: #e0e0e0; /* 밝은 텍스트 */
+}
+
+.header-wrap {
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #fff;
+padding: 10px;
+}
+
+.chat-container {
+flex-grow: 1;
+overflow-y: auto;
+padding: 10px;
+border: 2px solid #3f51b5; /* 짙은 인디고 */
+height:auto;
+
+}
+
+.chat-bubble {
+padding: 10px;
+margin: 10px 0;
+position: relative;
+border: 1px solid #333;
+background-color: #2e2e2e; /* 다크 버블 */
+}
+
+.user {
+max-width: 80%;
+align-self: flex-end;
+margin-left: auto;
+background-color: #3a3a3a; /* 다크 유저 버블 */
+}
+
+.assistant {
+align-self: flex-start;
+margin-right: auto;
+}
+
+.chat-input {
+display: flex;
+flex-direction: column;
+background-color: #1f1f1f; /* 다크 입력 배경 */
+padding: 10px;
+position: sticky;
+}
+
+textarea {
+resize: none;
+height: 100px;
+border: 1px solid #444;
+background-color: #2e2e2e; /* 다크 텍스트 영역 */
+color: #e0e0e0;
+margin-bottom: 10px;
+}
+
+button {
+background-color: #3f51b5; /* 짙은 인디고 */
+color: #fff;
+border: none;
+padding: 10px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #303f9f; /* 더 짙은 인디고 */
+}
